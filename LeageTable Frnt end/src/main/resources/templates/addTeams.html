@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>League</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div align="center">
+    <h1>Insert Team results </h1>
+    <br />
+    <div class="col-sm-4">
+        <form action="#" th:action="@{/save}">
+
+            <th>ts</th>
+            
+
+            <div alight="left">
+
+                <tr>
+                    <label class="form-label" >POS</label>
+                    <td><input type="text" th:field="*{POS}" class="form-control" placeholder="POSITION" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >TEAM</label>
+                    <td><input type="text" th:field="*{name}" class="form-control" placeholder="Team Name" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >P</label>
+                    <td><input type="text" th:field="*{P}" class="form-control" placeholder="MACHES PLAYED" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >W</label>
+                    <td><input type="text" th:field="*{W}" class="form-control" placeholder="WINS" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >D</label>
+                    <td><input type="text" th:field="*{D}" class="form-control" placeholder="DRAWS" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >L</label>
+                    <td><input type="text" th:field="*{}" class="form-control" placeholder="LOSSES" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >F</label>
+                    <td><input type="text" th:field="*{F}" class="form-control" placeholder="TOTAL GOALS SCORED" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >A</label>
+                    <td><input type="text" th:field="*{A}" class="form-control" placeholder="GOALS CONCEDED" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >D</label>
+                    <td><input type="text" th:field="*{D}" class="form-control" placeholder="F-A" /></td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >PTS</label>
+                    <td><input type="text" th:field="*{PTS}" class="form-control" placeholder="TOTAL POINTS" /></td>
+                </tr>
+            </div>
+            <br>
+            <tr>
+                <td colspan="2"><button type="submit" class="btn btn-info">Save Team </button> </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
